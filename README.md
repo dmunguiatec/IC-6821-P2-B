@@ -66,7 +66,7 @@ Queremos desarrollar una arquitectura de software para soportar una plataforma d
 
 El proyecto consiste en implementar e integrar los tres componentes tecnológicos del sistema de micro financiamiento: BANCA, PMF y CCF.
 
-Se deben diseñar e implementar los modelos de datos y APIs REST para implementar las responsabilidades de cada componente. No se desarrollará ningún tipo de interfaz de usuario.
+Este es un proyecto de *back-end*. Se deben diseñar e implementar los modelos de datos y APIs REST para implementar las responsabilidades de cada componente. No se desarrollará ningún tipo de interfaz de usuario.
 
 #### Responsabilidades
 
@@ -126,7 +126,6 @@ CCF
 * Cada componente incluirá un script de carga de datos de demostración (*seed data*) a través de una versión de Flyway.
 * Los componentes externos de notificación como SMS y correo electrónico no deben ser implementados funcionalmente, sino que pueden ser simulados (*mocked*) a través de una abstracción adecuada.
 * Los componentes externos de pago como SINPE Móvil y Pasarela de pago (tarjeta de crédito) no deben ser implementados funcionalmente, sino que se debe asumir que un endpoint de nuestro API es invocado a través de esos componentes, este endpoint recibe los datos relevantes generados por el componente externo según la operación que se esté realizando.
-* Todas las API REST deben ser documentadas con Spring REST Docs.
 
 #### Consideraciones logísticas
 
@@ -137,3 +136,4 @@ CCF
 * Los subgrupos deben coordinar entre sí las interfaces REST que utilizarán para la integración con los otros componentes. El diseño debe considerar la alta posibilidad de que estas interfaces deban cambiar sobre la marcha.
 * Ningún subgrupo debe hacer commits en un componente que no le corresponda.
 * Cada subgrupo será evaluado individualmente.
+* Las entregas se evaluarán de acuerdo con la siguiente rúbrica: https://docs.google.com/spreadsheets/d/1L7wvJyRhLRiABqPIGnG_P47MEUOyAfpL5lQvunjh6Wg
